@@ -29,8 +29,10 @@ $ cordova requirement android
 > 3.创建app目录，文件夹取名为hello
 
 ```
+ #创建app目录结构
 $ cordova create hello
-# 并进入hello目录
+
+# 进入app,hello的目录
 $ cd hello
 ```
 
