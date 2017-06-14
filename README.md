@@ -39,22 +39,27 @@ $ cd hello
 $ cordova platform add android --save
 
 
-# (可选步骤)6.安装plugin cordova-hot-code-push-plugin：
+# (可选步骤)6.安装热更新插件
 cordova plugin add cordova-hot-code-push-plugin
 
 
-# (可选步骤)7.安装plugin com.badrit.MacAddress
-$ cordova plugin add com.badrit.MacAddress
+# (可选步骤)7.安装获取mac地址的插件
+$ cordova plugin add https://github.com/mohamed-salah/MacAddress.git
 
 
-# （可选步骤）8.全局安装 cordova-hot-code-push-cl:
+# （可选步骤）8.全局安装热更新工具
 $ npm install -g cordova-hot-code-push-cli
 
 ```
 
 
-# 打包APP(注：目录中不能有汉字，不然报错)
+# 打包APP流程(注：目录中不能有汉字，不然报错)
 ```bash
+# 使www文件夹下生成两个热更新所需文件chcp.manifest/chcp
+$ cordova-hcp build 
+
+
+# 构建安卓平台apk
 $ cordova build
 ```
 
