@@ -22,13 +22,14 @@ npm install -g cordova
 
 > 2.检查环境
 
-```
+```bash
+# 检查环境
 $ cordova requirement android
 ```
 
 > 3.创建app目录，文件夹取名为hello
 
-```
+```bash
  #创建app目录结构
 $ cordova create hello
 
@@ -38,13 +39,13 @@ $ cd hello
 
 > 4.创建app平台，以及实施打包
 
-```
+```bash
 $ cordova platform add android --save
 ```
 
 > 5.打包APP
 
-```
+```bash
 $ cordova build
 ```
 
