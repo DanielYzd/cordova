@@ -1,4 +1,6 @@
 # cordova
+![image](https://user-images.githubusercontent.com/18028533/27120577-b9a728d0-5116-11e7-94a2-8cd55266ba04.png)
+
 > cordova-安卓app打包工具
 
 # 环境搭建
@@ -21,7 +23,7 @@ ant | ant -v |
 npm install -g cordova
 
 
-# 2.检查环境
+# （可选步骤）2.检查环境
 $ cordova requirement android
 
 
@@ -37,9 +39,25 @@ $ cd hello
 $ cordova platform add android --save
 
 
-# 6.打包APP(注：目录中不能有汉字，不然报错)
+# (可选步骤)6.安装plugin cordova-hot-code-push-plugin：
+cordova plugin add cordova-hot-code-push-plugin
+
+
+# (可选步骤)7.安装plugin com.badrit.MacAddress
+$ cordova plugin add com.badrit.MacAddress
+
+
+# （可选步骤）8.全局安装 cordova-hot-code-push-cl:
+$ npm install -g cordova-hot-code-push-cli
+
+```
+
+
+# 打包APP(注：目录中不能有汉字，不然报错)
+```bash
 $ cordova build
 ```
+
 
 # 输出app
 `目录 ： > hello\platforms\android\build\outputs\apk`
