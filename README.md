@@ -1,7 +1,7 @@
-# cordova
+# 安卓app打包工具cordova使用教程
 ![image](https://user-images.githubusercontent.com/18028533/27120577-b9a728d0-5116-11e7-94a2-8cd55266ba04.png)
 
-> cordova-安卓app打包工具
+
 
 # 环境搭建
 > 材料,准备工作
