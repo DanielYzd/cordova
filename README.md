@@ -1,5 +1,5 @@
 # cordova
-cordova-安卓app打包工具
+> cordova-安卓app打包工具
 
 # 环境搭建
 > 材料,准备工作
@@ -14,40 +14,29 @@ ant | ant -v |
 
 # 打包步骤
 [cordova打包教程](http://www.jianshu.com/p/60e98587ae89)
-> 1.安装cordova 
 
-```
+
+```bash
+#1. 安装cordova 
 npm install -g cordova
-```
 
-> 2.检查环境
 
-```bash
-# 检查环境
+# 2.检查环境
 $ cordova requirement android
-```
 
-> 3.创建app目录，文件夹取名为hello
 
-```bash
- #创建app目录结构
+# 3.创建目录结构，文件夹取名为hello
 $ cordova create hello
 
-# 进入app,hello的目录
+# 4.进入hello文件夹目录
 $ cd hello
-```
 
-> 4.创建app平台，以及实施打包
-
-```bash
+# 5.创建android平台
 $ cordova platform add android --save
-```
 
-> 5.打包APP
-
-```bash
+# 6.打包APP
 $ cordova build
 ```
 
 # 输出app
-目录 ： > hello2\platforms\android\build\outputs\apk
+`目录 ： > hello\platforms\android\build\outputs\apk`
