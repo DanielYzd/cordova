@@ -28,13 +28,16 @@ $ cordova requirement android
 # 3.创建目录结构，文件夹取名为hello
 $ cordova create hello
 
+
 # 4.进入hello文件夹目录
 $ cd hello
+
 
 # 5.创建android平台
 $ cordova platform add android --save
 
-# 6.打包APP
+
+# 6.打包APP(注：目录中不能有汉字，不然报错)
 $ cordova build
 ```
 
