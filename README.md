@@ -76,31 +76,9 @@ $ npm install -g cordova-hot-code-push-cli
 $ cordova-hcp build 
 ```
 ### 五、早config.xml文件添加热更新配置，并运行构建命令
-> 添加热更新配置
+> 添加热更新配置,此步骤在我自
 
 ![image](https://user-images.githubusercontent.com/18028533/27170454-82b21e32-51e0-11e7-84ae-67fb298dc4bf.png)
-```xml
-<chcp>
-  <config-file url="http://10.86.87.112:3033/hotcode/chcp.json"/>
-</chcp>
-```
-
-> 运行命令
-
-```bash
-$ cordova build android
-```
-
-### 六、直接更新
-
-- 修改www目录下的内容，例如：修改index.html中的代码.
-- 然后运行cordova-hcp build.
-- 再将index.html和chcp.json和chcp.manifest一起上传到服务器对应的位置。
-- 重新打开app将会看见更新的内容。
-
-### 七、弹窗提示
-> 将config.xml文件夹中的配置进行修改，注：要在<widget></widget>标签内部，url为改json地址
-
 ```html
 <chcp>
     <auto-download enabled="false" />
@@ -108,7 +86,8 @@ $ cordova build android
     <config-file url="http://10.86.87.112:3033/hotcode/chcp.json"/>
 </chcp>
 ```
-> 添加js代码
+
+> 添加弹窗js代码
 
 ```js
 //备注：这里的使用了Framework7
@@ -134,6 +113,31 @@ chcp.fetchUpdate(function(error, data) {
     }
 })
 ```
+
+> 运行命令
+
+```bash
+$ cordova build android
+```
+
+### 六、修改服务端的代码
+
+- 修改www目录下的内容，例如：修改index.html中的代码.
+- 然后运行cordova-hcp build.
+- 再将index.html和chcp.json和chcp.manifest一起上传到服务器对应的位置。
+- 重新打开app将会看见更新的内容。
+
+### 七、弹窗提示
+> 将config.xml文件夹中的配置进行修改，注：要在<widget></widget>标签内部，url为改json地址
+
+```html
+<chcp>
+    <auto-download enabled="false" />
+    <auto-install enabled="false" />
+    <config-file url="http://10.86.87.112:3033/hotcode/chcp.json"/>
+</chcp>
+```
+
 
 # 打包APP流程(注：目录中不能有汉字，不然报错)
 ```bash
