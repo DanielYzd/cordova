@@ -1,0 +1,31 @@
+<!-- 关重件分装采集维护 -->
+<div data-page="ipChooseIdentify" class="page client-ipChooseIdentify">
+	<div class="page-content" >
+        <div class="preloaderWrap">
+            <span class="preloader"></span>
+            <br>
+            正在加载产品标识
+        </div>
+        <form id="chooseIdentifyForm">
+            <!--产品标识选择单选-->
+            <div class="radio-group" id="productListRender">
+            </div>
+            <script type="text/html" id="productListTpl">
+                {{#each productList}}
+                <div class="sz-singleline-input sz-input-big font-22">
+                    <label>{{@count}}</label>
+                    <div class="content">
+                        <div class="radio-wrap">
+                            <input type="radio" name="productIdentify" id={{indexid}} data-num="{{productNumInputValue}}" value={{productNum}}  subAssemblyBarcode={{subAssemblyBarcode}}>
+                            <label for={{indexid}}>
+                                <span>{{productNumInputValue}}</span>
+                                <i class="radio-ico"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </form>
+	</div>
+</div>

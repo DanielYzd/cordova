@@ -1,0 +1,202 @@
+[
+  {
+    "file": "assets/css/commonComponent.css",
+    "hash": "ecc15d8e6f3d00e09281125465e3e29e"
+  },
+  {
+    "file": "assets/css/style.css",
+    "hash": "945d0b93298453d4927e260a69323be2"
+  },
+  {
+    "file": "assets/fonts/ionicons.eot",
+    "hash": "19e65b89cee273a249fba4c09b951b74"
+  },
+  {
+    "file": "assets/fonts/ionicons.svg",
+    "hash": "76feeddb13c5ad4f4c05ef7d88531f96"
+  },
+  {
+    "file": "assets/fonts/ionicons.ttf",
+    "hash": "dd4781d1acc57ba4c4808d1b44301201"
+  },
+  {
+    "file": "assets/fonts/ionicons.woff",
+    "hash": "2c159d0d05473040b53ec79df8797d32"
+  },
+  {
+    "file": "assets/images/avatar.png",
+    "hash": "f41837b7e8dc21c2cdfab76c1c2d9237"
+  },
+  {
+    "file": "assets/images/bell-1.png",
+    "hash": "5bcb616acb049e59801c5efd88c2775b"
+  },
+  {
+    "file": "assets/images/bell.png",
+    "hash": "5805350d5b1dc0facdc7e6112b68a6a6"
+  },
+  {
+    "file": "assets/images/clock.png",
+    "hash": "82493090583f3255388dfa392aad0c5f"
+  },
+  {
+    "file": "assets/images/equipment-1.png",
+    "hash": "5334c13ac6ab70e86feeb41b51d77fab"
+  },
+  {
+    "file": "assets/images/equipment.png",
+    "hash": "571fff72fd699c58aebd94e38ac282b7"
+  },
+  {
+    "file": "assets/images/EVUN_logo .png",
+    "hash": "d34560a23541821b3c4406294cc29e31"
+  },
+  {
+    "file": "assets/images/home.png",
+    "hash": "5a04a71ec05a3f48e60a6768b55593c6"
+  },
+  {
+    "file": "assets/images/i-form-calendar-material.svg",
+    "hash": "15b52fc83f1ec9a504bf41974a8a53dd"
+  },
+  {
+    "file": "assets/images/i-form-comment-material.svg",
+    "hash": "c3f821003c9e9d01afc6d1b04466937c"
+  },
+  {
+    "file": "assets/images/i-form-email-material.svg",
+    "hash": "c49ccf43dadac0c6b7e6e962fc847023"
+  },
+  {
+    "file": "assets/images/i-form-gender-material.svg",
+    "hash": "acf4c1c2e3871adb7c5c4b1274bd9d56"
+  },
+  {
+    "file": "assets/images/i-form-name-material.svg",
+    "hash": "db9d78cc557acd18d6a826271b47ed8f"
+  },
+  {
+    "file": "assets/images/i-form-password-material.svg",
+    "hash": "fa684c50ce5cb269d6c4fb4f42710772"
+  },
+  {
+    "file": "assets/images/i-form-settings-material.svg",
+    "hash": "0e0ec79de204ac66a9cf07e32005d300"
+  },
+  {
+    "file": "assets/images/i-form-tel-material.svg",
+    "hash": "d1f6697809d815c7de2531fa3e696df5"
+  },
+  {
+    "file": "assets/images/i-form-toggle-material.svg",
+    "hash": "3f38dcdba86bbb49ef21a9167e1eaf03"
+  },
+  {
+    "file": "assets/images/i-form-url-material.svg",
+    "hash": "b9c45add25aabf86a3503e8d46416641"
+  },
+  {
+    "file": "assets/images/keypartSprit.png",
+    "hash": "5e3262eb5f5728e8d9495f00061b6cc8"
+  },
+  {
+    "file": "assets/images/link.png",
+    "hash": "a1fce8d57b7b742efdefecc37f866a54"
+  },
+  {
+    "file": "assets/images/login_bg.jpg",
+    "hash": "cb19e4c5e1f4369fd248044eabfd75c5"
+  },
+  {
+    "file": "assets/images/login_form_bg.png",
+    "hash": "74667bcb9063c8ea2b52622977d7d242"
+  },
+  {
+    "file": "assets/images/login_form_top.png",
+    "hash": "6d1095456119780bf11e40d4af6d81bb"
+  },
+  {
+    "file": "assets/images/logo.png",
+    "hash": "0596ebe5e8420a404b942e57c91c2d3a"
+  },
+  {
+    "file": "assets/images/material-2.png",
+    "hash": "aa3ee0a08ae6845bb2e3f811f5f89c39"
+  },
+  {
+    "file": "assets/images/material.png",
+    "hash": "78bb919d3d5a311a028afd12483dd061"
+  },
+  {
+    "file": "assets/images/quality-1.png",
+    "hash": "818cc85f427f3289d98230c1b03456e4"
+  },
+  {
+    "file": "assets/images/quality.png",
+    "hash": "6868eafebb09a8c9c12955764907963b"
+  },
+  {
+    "file": "assets/js/app.js",
+    "hash": "20c8c7a5348c88baf22d3760ab2c5bba"
+  },
+  {
+    "file": "assets/js/app.js.map",
+    "hash": "3635ef8542fc68f93c5f31a470b96f2b"
+  },
+  {
+    "file": "assets/js/common.js",
+    "hash": "4d19e5d37b89e54e3082d21de13342a5"
+  },
+  {
+    "file": "assets/js/common.js.map",
+    "hash": "276207ac2df60590148192a5ab5af390"
+  },
+  {
+    "file": "index.html",
+    "hash": "312734b4d57e246232430b91c1ffc4ad"
+  },
+  {
+    "file": "views/home.html",
+    "hash": "c073e4e0fa309434661575f67f91942e"
+  },
+  {
+    "file": "views/index.html",
+    "hash": "8412a2ae7fcefd19e9ee8bf0b6e7f43d"
+  },
+  {
+    "file": "views/notification/notification.html",
+    "hash": "a99c6496a42281827b5c4bdf5f8bcd94"
+  },
+  {
+    "file": "views/notification/notificationDetail.html",
+    "hash": "ccbf7bbf1d0ed71959d1a97c9b88a4c8"
+  },
+  {
+    "file": "views/pqs/ipChooseIdentify.html",
+    "hash": "067c926f2980fad7578b775a4ea37d57"
+  },
+  {
+    "file": "views/pqs/ipCollect.html",
+    "hash": "5eb83981cf09aba53e62d4a0bb15f823"
+  },
+  {
+    "file": "views/pqs/ipCollectAdd.html",
+    "hash": "7cb1ed9576be3e0f62f81fd22b37aa59"
+  },
+  {
+    "file": "views/pqs/ipCollectMaintain.html",
+    "hash": "b91d7f33209575e7afd83420a53bc1e8"
+  },
+  {
+    "file": "views/pqs/keyComponentsOfPackagingCollection.html",
+    "hash": "f39d63c42e3e75d3b1234adc96894573"
+  },
+  {
+    "file": "views/pqs/keyComponentsOfPackagingMakeup.html",
+    "hash": "2866d289527530fee119fc2c0fe9bf65"
+  },
+  {
+    "file": "views/userCenter/userCenter.html",
+    "hash": "6b0f2f22e3c4aad0f19b41fca81cf28d"
+  }
+]

@@ -1,0 +1,69 @@
+<!-- 消息页面 -->
+<div data-page="notification" class="page notification cached">
+	<div class="tabs-wrap">
+		<div sw-role="cell" class="tab-links">
+			<a href="#tab1" class="button tab-link active" data-i18n="COMMON.B.ALL"></a>
+			<a href="#tab2" class="button tab-link" data-i18n="COMMON.B.MESSAGE"></a>
+			<a href="#tab3" class="button tab-link" data-i18n="COMMON.B.NOTICE"></a>
+		</div>
+	</div>
+	<div class="tabs-swipeable-wrap">
+		<div class="tabs">
+			<div id="tab1" class="page-content tab active infinite-scroll">
+				<div class="renderWrap">
+					<ul id="msgRednder1"></ul>
+					<div class="have-no-more">
+						没有更多了
+					</div>
+				</div>
+			</div>
+
+			<div id="tab2" class="page-content tab infinite-scroll">
+				<div class="renderWrap">
+					<ul id="msgRednder2"></ul>
+					<div class="have-no-more">
+						没有更多了
+					</div>
+				</div>
+			</div>
+
+			<div id="tab3" class="page-content tab infinite-scroll">
+				<div class="renderWrap">
+					<ul id="msgRednder3"></ul>
+					<div class="have-no-more">
+						没有更多了
+					</div>
+				</div>
+			</div>
+			<script type="text/html" id="msgTpl">
+				{{#each list}}
+				<li class="inf-brief {{extClass}}" messageID="{{messageID}}" readFlag="{{readFlag}}">
+					<div class="inf-title" sw-role="cell" sw-mode="x">
+						<div sw-role="cell" sw-layout="fit">[<span class="messageType">{{messageType}}</span>]<span class="messageCode">{{messageCode}}</span></div>
+						<div sw-role="cell" class="messageTime">{{messageTime}}</div>
+					</div>
+					<div class="inf-content">
+						{{messageContent}}
+					</div>
+				</li>
+				{{/each}}
+			</script>
+		</div>
+	</div>
+</div>
+
+<!--<div class="infinite-scroll-preloader">-->
+<!--<div class="preloader"></div>-->
+<!--</div>-->
+
+<!--{{#each list}}-->
+<!--<li class="inf-brief un-read">-->
+<!--<div class="inf-title" sw-role="cell" sw-mode="x">-->
+<!--<div sw-role="cell" sw-layout="fit">[消息]管理员</div>-->
+<!--<div sw-role="cell">2016-12-14 08:23:12</div>-->
+<!--</div>-->
+<!--<div class="inf-content">-->
+<!--今日产量计划500台，务必完成，延班1个小时，今日产量计划500台，务必完成，延班1个小时，今日产量计划500台，务必完成，延班1个小时，今日产量计划500台，务必完成，延班1个小时-->
+<!--</div>-->
+<!--</li>-->
+<!--{{/each}}-->

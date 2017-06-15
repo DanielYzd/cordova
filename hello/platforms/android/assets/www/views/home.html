@@ -1,0 +1,60 @@
+<div data-page="home" class="page">
+	<div class="page-content">
+		<div sw-role="cell" sw-mode="y" class="h100p">
+			<div sw-role="cell" sw-layout="fit" class="quick-start-body quick-start-body-height bg-gray h100p">
+				<div sw-role="cell" sw-layout="fit" class="quick-start-menus quick-start-body-height">
+					<div class="favor-menu h100p w100p" id="quickStartFavor">
+						<div class="quick-menus h100p overflow-auto">
+							<!--<div sw-role="cell" sw-align="center" sw-valign="middle" class="edit-favor-title">编辑模式</div>-->
+							<div sw-role="cell" sw-align="center" sw-valign="middle" class="edit-favor-title" data-i18n="APP.B.EDIT_MODE"></div>
+							<div sw-role="cell" sw-mode="wrap" id="quickStartMenus"></div>
+							<script type="text/html" id="quickStartMenuTpl">
+								{{#each favorMenu}}
+								<div class="quick-menu-item-box" favor-id="{{menuCode}}"
+									 data-module-code={{module.moduleCode}}
+									 data-module-group-code={{module.moduleGroupCode}}
+									 data-module-type={{module.moduleType}}>
+									<div class="quick-menu-item">
+										<a href="{{url}}" data-view=".view-main" sw-role="cell" sw-valign="middle"
+										   sw-align="center" data-id="{{menuCode}}" data-title="{{menuText}}"
+										   data-url="{{url}}" class="running-link quick-menu-item-inner button close-popup">
+											{{menuText}}
+										</a>
+										<a href="#" sw-role="cell" sw-align="center" sw-valign="middle"
+										   class="del-favor">
+											<i class="ion ion-close-circled"></i>
+										</a>
+										<a href="#" class="favor-move-box">
+										<span sw-role="cell" sw-align="center" sw-valign="middle" class="favor-move">
+											<i class="ion ion-drag"></i>
+										</span>
+										</a>
+									</div>
+								</div>
+								{{/each}}
+							</script>
+						    <div sw-role="cell" sw-align="center" sw-valign="middle" class="edit-favor-btm">
+								<a href="#" sw-valign="middle" class="button button-fill color-cyan add-favor margin-r-10"><i class="ion ion-plus margin-r-10 margin-l-5"></i>
+									<!--添加-->
+									<span data-i18n="COMMON.B.ADD"></span>
+								</a>
+								<!--<a href="#" class="button button-fill edit-favor-complete quick-favor-complete">完成编辑</a>-->
+								<a href="#" class="button button-fill edit-favor-complete quick-favor-complete" data-i18n="APP.B.EDIT_COMPLETE"></a>
+							</div>
+					    </div>
+                        <!-- Floating Action Button -->
+                        <div class="speed-dial tablet-style">
+                            <a href="#" class="floating-button"><i class="icon icon-plus"></i><i class="icon icon-close"></i></a>
+                            <div class="speed-dial-buttons">
+                                <a href="#" class="add-favor"><i class="icon icon-plus"></i>
+                                </a>
+                                <a href="#" class="edit-favor"><i class="ion ion-edit"></i>
+                                </a>
+                            </div>
+                        </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+</div>

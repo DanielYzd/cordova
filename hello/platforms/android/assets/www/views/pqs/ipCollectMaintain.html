@@ -1,0 +1,58 @@
+<!-- 关重件采集维护 -->
+<div data-page="ipCollectMaintain" class="page client-ipCollectMaintain">
+	<div class="content-wrap">
+        <div class="page-content" >
+            <!--物料编码-->
+            <div class="sz-singleline-input sz-disabled sz-input-big font-22 material-no">
+                <label data-i18n="KEYPART.T.MATERIAL_NO"></label>
+                <div class="content number"></div>
+                <div class="content name"></div>
+            </div>
+            <form id="maintainForm">
+                <!--供应商选择单选-->
+                <div class="padding-l-20 radio-group" id="supplierListRender">
+                </div>
+                <script type="text/html" id="supplierListTpl">
+                    {{#if onlyOne}}
+                        <div class="sz-singleline-input sz-input-big font-22">
+                            <label>{{@root.supplierLabel}}</label>
+                            <div class="content"></div>
+                        </div>
+                    {{else}}
+                        {{#each supplierList}}
+                        <div class="sz-singleline-input sz-input-big font-22">
+                            {{#if @first}}
+                            <label>{{@root.supplierLabel}}</label>
+                            {{/if}}
+                            <div class="content">
+                                <div class="radio-wrap">
+                                    <input type="radio" name="provider" indexid={{indexid}} value={{supplierCode}}>
+                                    <label indexid={{indexid}}>
+                                        <span>{{supplierText}}</span>
+                                        <i class="radio-ico"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    {{/if}}
+                </script>
+                <!--批次号-->
+                <div class="sz-singleline-input sz-input-big font-22">
+                    <label data-i18n="KEYPART.T.BATCH"></label>
+                    <div class="content">
+                        <input type="text" value="" class="batch-input" maxlength="60">
+                    </div>
+                </div>
+                <!--此input框无意义，只为防止form中只有一个input元素时按回车默认提交表单-->
+                <input style="display:none" mce_style="display:none">
+            </form>
+        </div>
+    </div>
+    <!--清空-->
+    <div class="button-wrap">
+        <div class="sz-button-block sz-bg-red reset-button">
+            <a href="#" data-i18n="COMMON.B.CLEAR"></a>
+        </div>
+    </div>
+</div>
