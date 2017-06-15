@@ -78,6 +78,7 @@ $ cordova-hcp build
 ### 五、早config.xml文件添加热更新配置，并运行构建命令
 > 添加热更新配置
 
+![image](https://user-images.githubusercontent.com/18028533/27170454-82b21e32-51e0-11e7-84ae-67fb298dc4bf.png)
 ```xml
 <chcp>
   <config-file url=" 你的服务器访问路径/hotcode/chcp.json"/>
