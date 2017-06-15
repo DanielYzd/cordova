@@ -88,12 +88,12 @@ $ cordova-hcp build
 > 运行命令
 
 ```bash
-$ cordova build Android
+$ cordova build android
 ```
 
 ### 六、直接更新
 
-- 修改www目录下的内容，例如：修改index.html中的代码，然后运行cordova-hcp build.再将index.html和chcp.json和chcp.manifest一起上传到服务器对应的位置。重新打开app将会看见更新的内容。
+> 修改www目录下的内容，例如：修改index.html中的代码，然后运行cordova-hcp build.再将index.html和chcp.json和chcp.manifest一起上传到服务器对应的位置。重新打开app将会看见更新的内容。
 
 ### 七、弹窗提示
 > 将config.xml文件夹中的配置进行修改，注：要在<widget></widget>标签内部，url为改json地址
