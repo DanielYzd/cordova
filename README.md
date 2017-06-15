@@ -1,9 +1,6 @@
-# 安卓app打包工具cordova使用教程
+# 安卓app打包工具cordova使用教程及环境搭建
 ![image](https://user-images.githubusercontent.com/18028533/27120577-b9a728d0-5116-11e7-94a2-8cd55266ba04.png)
 
-
-
-# 环境搭建
 > 材料,准备工作
 
 项目  | 验证安装完成 | 教程
@@ -75,10 +72,12 @@ $ npm install -g cordova-hot-code-push-cli
 # 使www文件夹下生成两个热更新所需文件chcp.manifest/chcp
 $ cordova-hcp build 
 ```
-### 五、早config.xml文件添加热更新配置，并运行构建命令
-> 添加热更新配置,此步骤在我自
+### 五、在config.xml文件添加热更新配置，并运行构建命令
 
 ![image](https://user-images.githubusercontent.com/18028533/27170454-82b21e32-51e0-11e7-84ae-67fb298dc4bf.png)
+
+> 该代码需加在 `<widget></widget>` 标签内部
+
 ```html
 <chcp>
     <auto-download enabled="false" />
@@ -125,23 +124,11 @@ $ cordova build android
 - 修改www目录下的内容，例如：修改index.html中的代码.
 - 然后运行cordova-hcp build.
 - 再将index.html和chcp.json和chcp.manifest一起上传到服务器对应的位置。
-- 重新打开app将会看见更新的内容。
-
-### 七、弹窗提示
-> 将config.xml文件夹中的配置进行修改，注：要在<widget></widget>标签内部，url为改json地址
-
-```html
-<chcp>
-    <auto-download enabled="false" />
-    <auto-install enabled="false" />
-    <config-file url="http://10.86.87.112:3033/hotcode/chcp.json"/>
-</chcp>
-```
+- 重新打开app将会看见更新的内容(一句json文件中release属性的时间大小判断，后打包的即为新版本)。
 
 
 # 打包APP流程(注：目录中不能有汉字，不然报错)
 ```bash
-
 # 构建安卓平台apk
 $ cordova build
 ```
