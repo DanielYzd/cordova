@@ -56,7 +56,7 @@ $ npm install -g cordova-hot-code-push-cli
 ```
 
 ### 二、在静态服务器下创建一个目录。
-> 例： /hotcode
+> 这里自己在内网服务器http://10.86.87.112:3033端口起了一个node服务。 例： /hotcode
 
 ### 三 、在项目的根目录下"/hello"新建一个cordova-hcp.json的文件添加以下内容：
 ```json
